@@ -1,68 +1,38 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
 using System.Threading;
-using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium.Chrome;
 
-namespace CentricUnitTestProject
+namespace ParaBankTests
 {
     [TestClass]
-    public class CentricUnitTest
+    public class LoginTest
     {
-
         private IWebDriver driver;
-        private WebDriverWait wait;
-
 
         [TestInitialize]
-        public void Init()
+        public void Setup()
         {
-            try
-            {
-                driver = new ChromeDriver();
-                driver.Manage().Window.Maximize();
-                driver.Navigate().GoToUrl("https://testautomationu.applitools.com/");
-                wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Setup failed: " + ex.Message);
-                throw;
-            }
+            driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+            driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/index.htm");
         }
 
         [TestMethod]
-        public void TestValidLogin()
+        public void ValidLogin_ShouldNavigateToAccountsOverview()
         {
-            driver.Navigate().GoToUrl("https://testautomationu.applitools.com/login");
+            // Introducere username și password
+            driver.FindElement(By.Name("username")).SendKeys("john");
+            driver.FindElement(By.Name("password")).SendKeys("demo");
+            driver.FindElement(By.XPath("//input[@value='Log In']")).Click();
+            Thread.Sleep(10);
 
-            // Click pe butonul Sign in with email
-            var signInEmailBtn = wait.Until(d => d.FindElement(By.CssSelector("li.firebaseui-list-item button.firebaseui-idp-password")));
-            signInEmailBtn.Click();
-
-            // Așteaptă câmpul de email (input cu id="email") și introdu emailul
-            var emailInput = wait.Until(d => d.FindElement(By.CssSelector("#firebaseui-auth-container > div > form > div.firebaseui-card-content > div.firebaseui-textfield.mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.is-dirty.is-upgraded > input")));
-            emailInput.SendKeys("vasile.lesan@student.tuiasi.ro");
-
-            // Trimite Enter sau da click pe Next dacă există (depinde de flux)
-            emailInput.SendKeys(Keys.Enter);
-
-            // Așteaptă să apară câmpul de parolă (input cu id="password") după ce ai introdus emailul
-            var passwordInput = wait.Until(d => d.FindElement(By.CssSelector("#firebaseui-auth-container > div > form > div.firebaseui-card-content > div:nth-child(3) > input")));
-            passwordInput.SendKeys("vasile1234!");
-
-            // Trimite formularul apăsând Enter
-            passwordInput.SendKeys(Keys.Enter);
-
-            // Așteaptă elementul care confirmă loginul reușit
-            var navbarBrand = wait.Until(d => d.FindElement(By.ClassName("navbar-brand")));
-            Assert.IsTrue(navbarBrand.Displayed, "Login eșuat - navbar brand nu este vizibil!");
+            // Verificare că pagina "Accounts Overview" este afișată
+            Assert.IsTrue(driver.PageSource.Contains("Accounts Overview"), "Autentificarea a eșuat sau pagina nu a fost încărcată corect.");
         }
 
-            [TestCleanup]
-        public void Cleanup()
+        [TestCleanup]
+        public void Teardown()
         {
             driver.Quit();
         }
