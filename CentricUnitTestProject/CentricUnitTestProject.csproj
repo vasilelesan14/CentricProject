@@ -178,6 +178,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageObjectModel\UpdateInfoPage.cs" />
+    <Compile Include="Tests\Workflow_3.cs" />
     <Compile Include="Tests\Workflow_1.cs" />
     <Compile Include="Date\UserData.Designer.cs">
       <AutoGen>True</AutoGen>
