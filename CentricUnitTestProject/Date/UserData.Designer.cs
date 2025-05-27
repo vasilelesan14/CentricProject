@@ -88,7 +88,7 @@ namespace CentricUnitTestProject.Date {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ion.
+        ///   Looks up a localized string similar to Alexandru.
         /// </summary>
         internal static string FirstName {
             get {
@@ -102,6 +102,24 @@ namespace CentricUnitTestProject.Date {
         internal static string LastName {
             get {
                 return ResourceManager.GetString("LastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to demo.
+        /// </summary>
+        internal static string LoginPassword {
+            get {
+                return ResourceManager.GetString("LoginPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to john.
+        /// </summary>
+        internal static string LoginUser {
+            get {
+                return ResourceManager.GetString("LoginUser", resourceCulture);
             }
         }
         
@@ -142,7 +160,7 @@ namespace CentricUnitTestProject.Date {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ipope34.
+        ///   Looks up a localized string similar to makeaveellly.
         /// </summary>
         internal static string UserName {
             get {

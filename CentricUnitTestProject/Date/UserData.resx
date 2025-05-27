@@ -127,10 +127,16 @@
     <value>ionpopescu@test.com</value>
   </data>
   <data name="FirstName" xml:space="preserve">
-    <value>Ion</value>
+    <value>Alexandru</value>
   </data>
   <data name="LastName" xml:space="preserve">
     <value>Popescu</value>
+  </data>
+  <data name="LoginPassword" xml:space="preserve">
+    <value>demo</value>
+  </data>
+  <data name="LoginUser" xml:space="preserve">
+    <value>john</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>ionpopescu1234!</value>
@@ -145,7 +151,7 @@
     <value>Campus Tudor Vladimirescu</value>
   </data>
   <data name="UserName" xml:space="preserve">
-    <value>ipope34</value>
+    <value>makeaveellly</value>
   </data>
   <data name="ZipCode" xml:space="preserve">
     <value>700028</value>

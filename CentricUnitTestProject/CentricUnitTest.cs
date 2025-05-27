@@ -8,52 +8,57 @@ using System.Reflection;
 using System;
 using OpenQA.Selenium.Support.UI;
 using System.Threading;
+using CentricUnitTestProject.PageObjectModel;
 
 namespace CentricUnitTestProject
 {
     [TestClass]
-    public class Flow1_LoginLogout
+    public class ParaBankRegisterTest
     {
-        private IWebDriver _driver;
-        private ResourceManager _resManager;
-        private string _generatedUsername;
+        private IWebDriver driver;
+        private WebDriverWait wait;
 
         [TestInitialize]
         public void Setup()
         {
-            _driver = new ChromeDriver();
-            _driver.Manage().Window.Maximize();
-            _resManager = new ResourceManager("CentricUnitTestProject.Date.UserData", Assembly.GetExecutingAssembly());
-
+            driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+            driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/index.htm");
         }
 
         [TestMethod]
-        public void Test_Register()
+
+        public void Flow1_RegisterLogoutLogin()
         {
-            var registerPage = new RegisterPage(_driver);
+            var registerPage = new RegisterPage(driver);
+            var loginPage = new LoginPage(driver);
 
             registerPage.GoToRegisterPage();
-            registerPage.FillRegisterForm(
-                UserData.FirstName,
-                UserData.LastName,
-                UserData.Adress,
-                UserData.City,
-                UserData.State,
-                UserData.ZipCode,
-                UserData.Phone,
-                UserData.SSN,
-                UserData.UserName,
-                UserData.Password
-                );
+            registerPage.FillRegisterForm();
 
-            Assert.IsTrue(_driver.PageSource.Contains("Your account was created successfully"), "account creation failed");
+            var msg = wait.Until(d => d.FindElement(By.CssSelector("#rightPanel > p")));
+            Assert.IsTrue(msg.Text.Contains("Your account was created successfully"));
+
+            Thread.Sleep(500);
+            loginPage.LogOut();
+            var loginTitle = wait.Until(d => d.FindElement(By.XPath("//h2[text()='Customer Login']")));
+            Assert.IsTrue(loginTitle.Displayed);
+
+            Thread.Sleep(500);
+            loginPage.GoToLoginPage();
+            loginPage.Login("john", "demo");
+            Assert.IsTrue(driver.PageSource.Contains("Accounts Overview"), "Autentificarea a eșuat sau pagina nu a fost încărcată corect.");
+
         }
 
-        [TestCleanup]
-        public void TearDown()
+
+
+        /*[TestCleanup]
+        public void Cleanup()
         {
-            _driver.Quit();
-        }
+            driver.Quit();
+        }*/
     }
 
 }

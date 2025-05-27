@@ -19,11 +19,21 @@ namespace CentricUnitTestProject.PageObjectModel
             _wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
 
+        public void GoToLoginPage()
+        {
+            _driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/register.htm");
+        }
+
         public void Login(string username, string password)
         {
             _wait.Until(d => d.FindElement(By.Name("username"))).SendKeys(username);
             _driver.FindElement(By.Name("password")).SendKeys(password);
             _driver.FindElement(By.XPath("//input[@value='Log In']")).Click();
+        }
+
+        public void LogOut()
+        {
+            _wait.Until(d => d.FindElement(By.XPath("//*[@id='leftPanel']/ul/li[8]/a"))).Click();
         }
     }
 }
