@@ -12,6 +12,8 @@ namespace CentricUnitTestProject
     {
 
         private IWebDriver driver;
+        private WebDriverWait wait;
+
 
         [TestInitialize]
         public void Init()
@@ -20,29 +22,8 @@ namespace CentricUnitTestProject
             {
                 driver = new ChromeDriver();
                 driver.Manage().Window.Maximize();
-                driver.Navigate().GoToUrl("https://www.trivago.ro");
-
-                Thread.Sleep(3000);
-                /*                var cookieBtn = driver.FindElement(By.CssSelector("button[data-testid='uc-accept-all-button']"));
-                                if (cookieBtn.Displayed)
-                                    cookieBtn.Click();*/
-
-                // Obține shadow root
-                IWebElement usercentricsRoot = driver.FindElement(By.CssSelector("div.usercentrics-root"));
-
-                // Cast la IJavaScriptExecutor
-                IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
-
-                // Obține shadow root din elementul găsit
-                IWebElement shadowRoot = (IWebElement)js.ExecuteScript("return arguments[0].shadowRoot", usercentricsRoot);
-
-                // Caută butonul în shadow root
-                IWebElement button = shadowRoot.FindElement(By.CssSelector("button[data-testid='uc-privacy-button']"));
-
-                // Click pe buton
-                button.Click();
-
-
+                driver.Navigate().GoToUrl("https://testautomationu.applitools.com/");
+                wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 
             }
             catch (Exception ex)
@@ -53,24 +34,34 @@ namespace CentricUnitTestProject
         }
 
         [TestMethod]
-        public void SearchForParis_ShouldDisplayResults()
+        public void TestValidLogin()
         {
-            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-            var searchBox = wait.Until(drv => drv.FindElement(By.CssSelector("input[name='query']")));
-            searchBox.Clear();
-            searchBox.SendKeys("Paris");
+            driver.Navigate().GoToUrl("https://testautomationu.applitools.com/login");
 
-            Thread.Sleep(2000);  // poți înlocui cu un wait mai inteligent
+            // Click pe butonul Sign in with email
+            var signInEmailBtn = wait.Until(d => d.FindElement(By.CssSelector("li.firebaseui-list-item button.firebaseui-idp-password")));
+            signInEmailBtn.Click();
 
-            searchBox.SendKeys(Keys.Enter);
+            // Așteaptă câmpul de email (input cu id="email") și introdu emailul
+            var emailInput = wait.Until(d => d.FindElement(By.CssSelector("#firebaseui-auth-container > div > form > div.firebaseui-card-content > div.firebaseui-textfield.mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.is-dirty.is-upgraded > input")));
+            emailInput.SendKeys("vasile.lesan@student.tuiasi.ro");
 
-            Thread.Sleep(4000);
+            // Trimite Enter sau da click pe Next dacă există (depinde de flux)
+            emailInput.SendKeys(Keys.Enter);
 
-            Assert.IsTrue(driver.PageSource.Contains("Paris"), "Rezultatele nu conțin 'Paris'");
+            // Așteaptă să apară câmpul de parolă (input cu id="password") după ce ai introdus emailul
+            var passwordInput = wait.Until(d => d.FindElement(By.CssSelector("#firebaseui-auth-container > div > form > div.firebaseui-card-content > div:nth-child(3) > input")));
+            passwordInput.SendKeys("vasile1234!");
+
+            // Trimite formularul apăsând Enter
+            passwordInput.SendKeys(Keys.Enter);
+
+            // Așteaptă elementul care confirmă loginul reușit
+            var navbarBrand = wait.Until(d => d.FindElement(By.ClassName("navbar-brand")));
+            Assert.IsTrue(navbarBrand.Displayed, "Login eșuat - navbar brand nu este vizibil!");
         }
 
-
-        [TestCleanup]
+            [TestCleanup]
         public void Cleanup()
         {
             driver.Quit();
