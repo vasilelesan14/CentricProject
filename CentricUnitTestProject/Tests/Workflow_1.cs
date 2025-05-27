@@ -10,10 +10,10 @@ using OpenQA.Selenium.Support.UI;
 using System.Threading;
 using CentricUnitTestProject.PageObjectModel;
 
-namespace CentricUnitTestProject
+namespace CentricUnitTestProject.Tests
 {
     [TestClass]
-    public class ParaBankRegisterTest
+    public class Workflow_1
     {
         private IWebDriver driver;
         private WebDriverWait wait;
@@ -52,13 +52,12 @@ namespace CentricUnitTestProject
 
         }
 
-
-
-        /*[TestCleanup]
+        
+        [TestCleanup]
         public void Cleanup()
         {
             driver.Quit();
-        }*/
+        }
     }
 
 }
