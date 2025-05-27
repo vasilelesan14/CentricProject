@@ -1,40 +1,59 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using System.Threading;
 using OpenQA.Selenium.Chrome;
+using CentricUnitTestProject.PageObjectModel;
+using CentricUnitTestProject.Date;
+using System.Resources;
+using System.Reflection;
+using System;
+using OpenQA.Selenium.Support.UI;
+using System.Threading;
 
-namespace ParaBankTests
+namespace CentricUnitTestProject
 {
     [TestClass]
-    public class LoginTest
+    public class Flow1_LoginLogout
     {
-        private IWebDriver driver;
+        private IWebDriver _driver;
+        private ResourceManager _resManager;
+        private string _generatedUsername;
 
         [TestInitialize]
         public void Setup()
         {
-            driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();
-            driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/index.htm");
+            _driver = new ChromeDriver();
+            _driver.Manage().Window.Maximize();
+            _resManager = new ResourceManager("CentricUnitTestProject.Date.UserData", Assembly.GetExecutingAssembly());
+
         }
 
         [TestMethod]
-        public void ValidLogin_ShouldNavigateToAccountsOverview()
+        public void Test_Register()
         {
-            // Introducere username și password
-            driver.FindElement(By.Name("username")).SendKeys("john");
-            driver.FindElement(By.Name("password")).SendKeys("demo");
-            driver.FindElement(By.XPath("//input[@value='Log In']")).Click();
-            Thread.Sleep(10);
+            var registerPage = new RegisterPage(_driver);
 
-            // Verificare că pagina "Accounts Overview" este afișată
-            Assert.IsTrue(driver.PageSource.Contains("Accounts Overview"), "Autentificarea a eșuat sau pagina nu a fost încărcată corect.");
+            registerPage.GoToRegisterPage();
+            registerPage.FillRegisterForm(
+                UserData.FirstName,
+                UserData.LastName,
+                UserData.Adress,
+                UserData.City,
+                UserData.State,
+                UserData.ZipCode,
+                UserData.Phone,
+                UserData.SSN,
+                UserData.UserName,
+                UserData.Password
+                );
+
+            Assert.IsTrue(_driver.PageSource.Contains("Your account was created successfully"), "account creation failed");
         }
 
         [TestCleanup]
-        public void Teardown()
+        public void TearDown()
         {
-            driver.Quit();
+            _driver.Quit();
         }
     }
+
 }

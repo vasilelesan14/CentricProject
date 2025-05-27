@@ -195,3 +195,5 @@ C:\Users\Vasile\CentricProject\CentricUnitTestProject\bin\Debug\zh-Hans\Microsof
 C:\Users\Vasile\CentricProject\CentricUnitTestProject\bin\Debug\zh-Hant\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
 C:\Users\Vasile\CentricProject\CentricUnitTestProject\obj\Debug\CentricUnitTestProject.gentestingplatformentrypointinputcache.cache
 C:\Users\Vasile\CentricProject\CentricUnitTestProject\obj\Debug\CentricUnitTestProject.genautoregisteredextensionsinputcache.cache
+C:\Users\Vasile\CentricProject\CentricUnitTestProject\obj\Debug\CentricUnitTestProject.Date.UserData.resources
+C:\Users\Vasile\CentricProject\CentricUnitTestProject\obj\Debug\CentricUnitTestProject.csproj.GenerateResource.cache
