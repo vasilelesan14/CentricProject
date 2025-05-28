@@ -178,6 +178,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageObjectModel\RequestLoanPage.cs" />
     <Compile Include="PageObjectModel\UpdateInfoPage.cs" />
     <Compile Include="Tests\Workflow_3.cs" />
     <Compile Include="Tests\Workflow_1.cs" />

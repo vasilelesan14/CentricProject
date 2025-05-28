@@ -18,9 +18,8 @@ namespace CentricUnitTestProject.Tests
         private IWebDriver driver;
         private WebDriverWait wait;
 
-        private string baseUrl = "https://parabank.parasoft.com/parabank/index.htm";
-        private string username = "john";  // înlocuiește cu userul tău
-        private string password = "demo";  // înlocuiește cu parola ta
+        private string username = "john";  
+        private string password = "demo";  
 
         [TestInitialize]
         public void Setup()
@@ -52,6 +51,8 @@ namespace CentricUnitTestProject.Tests
             Assert.IsTrue(driver.PageSource.Contains("Your updated address and phone number have been added to the system."),
                 "contact update message not found");
         }
+
+        
 
 
         //[TestCleanup]

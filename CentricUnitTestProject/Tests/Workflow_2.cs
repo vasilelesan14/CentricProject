@@ -45,6 +45,21 @@ namespace CentricUnitTestProject.Tests
             Assert.IsFalse(string.IsNullOrEmpty(accountId), "new account id not generated");
         }
 
+        [TestMethod]
+        public void RequestLoanTest()
+        {
+            var loginPage = new LoginPage(driver);
+            var loanPage = new RequestLoanPage(driver);
+
+            loginPage.GoToLoginPage();
+            loginPage.Login("john", "demo");
+
+            loanPage.GoToRequestLoanPage();
+            loanPage.RequestLoan(1000, 100, "13344");
+
+            Assert.IsTrue(loanPage.IsLoanApproved(), "loan was not approved");
+        }
+
         [TestCleanup]
         public void Cleanup()
         {

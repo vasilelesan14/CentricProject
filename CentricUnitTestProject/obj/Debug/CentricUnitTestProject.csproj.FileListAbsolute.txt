@@ -33,7 +33,6 @@ C:\Users\Vasile\CentricProject\CentricUnitTestProject\bin\Debug\System.ValueTupl
 C:\Users\Vasile\CentricProject\CentricUnitTestProject\bin\Debug\WebDriver.xml
 C:\Users\Vasile\CentricProject\CentricUnitTestProject\obj\Debug\CentricUnitTestProject.csproj.AssemblyReference.cache
 C:\Users\Vasile\CentricProject\CentricUnitTestProject\obj\Debug\CentricUnitTestProject.csproj.CoreCompileInputs.cache
-C:\Users\Vasile\CentricProject\CentricUnitTestProject\obj\Debug\CentricUnitTestProject.csproj.CopyComplete
 C:\Users\Vasile\CentricProject\CentricUnitTestProject\obj\Debug\CentricUnitTestProject.dll
 C:\Users\Vasile\CentricProject\CentricUnitTestProject\obj\Debug\CentricUnitTestProject.pdb
 C:\Users\Vasile\CentricProject\CentricUnitTestProject\bin\Debug\Microsoft.ApplicationInsights.dll
@@ -197,3 +196,4 @@ C:\Users\Vasile\CentricProject\CentricUnitTestProject\obj\Debug\CentricUnitTestP
 C:\Users\Vasile\CentricProject\CentricUnitTestProject\obj\Debug\CentricUnitTestProject.genautoregisteredextensionsinputcache.cache
 C:\Users\Vasile\CentricProject\CentricUnitTestProject\obj\Debug\CentricUnitTestProject.Date.UserData.resources
 C:\Users\Vasile\CentricProject\CentricUnitTestProject\obj\Debug\CentricUnitTestProject.csproj.GenerateResource.cache
+C:\Users\Vasile\CentricProject\CentricUnitTestProject\obj\Debug\CentricU.2D0D41F9.Up2Date
