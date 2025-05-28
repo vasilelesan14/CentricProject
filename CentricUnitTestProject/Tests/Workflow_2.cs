@@ -43,6 +43,7 @@ namespace CentricUnitTestProject.Tests
 
             var accountId = openAccountPage.GetNewAccountId();
             Assert.IsFalse(string.IsNullOrEmpty(accountId), "new account id not generated");
+            Thread.Sleep(1000);
         }
 
         [TestMethod]
@@ -58,6 +59,8 @@ namespace CentricUnitTestProject.Tests
             loanPage.RequestLoan(1000, 100, "13344");
 
             Assert.IsTrue(loanPage.IsLoanApproved(), "loan was not approved");
+            Thread.Sleep(1000);
+
         }
 
         [TestCleanup]

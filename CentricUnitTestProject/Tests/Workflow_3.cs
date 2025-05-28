@@ -50,15 +50,32 @@ namespace CentricUnitTestProject.Tests
 
             Assert.IsTrue(driver.PageSource.Contains("Your updated address and phone number have been added to the system."),
                 "contact update message not found");
+            Thread.Sleep(1000);
+
         }
 
-        
 
+        [TestMethod]
+        public void ContactSupportTest()
+        {
+            var contactPage = new ContactPage(driver);
+            contactPage.GoToContactPage();
 
-        //[TestCleanup]
-        //public void Cleanup()
-        //{
-        //    driver.Quit();
-        //}
+            contactPage.SendMessage(
+                name: "Test User",
+                email: "testuser@example.com",
+                phone: "0712345678",
+                message: "This is a test message for support."
+            );
+
+            Assert.IsTrue(contactPage.IsMessageSent(), "message was not successfully sent");
+            Thread.Sleep(1000);
+        }
+
+        [TestCleanup]
+        public void Cleanup()
+        {
+            driver.Quit();
+        }
     }
 }

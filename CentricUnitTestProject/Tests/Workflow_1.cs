@@ -49,10 +49,11 @@ namespace CentricUnitTestProject.Tests
             loginPage.GoToLoginPage();
             loginPage.Login("john", "demo");
             Assert.IsTrue(driver.PageSource.Contains("Accounts Overview"), "Autentificarea a eșuat sau pagina nu a fost încărcată corect.");
+            Thread.Sleep(1000);
 
         }
 
-        
+
         [TestCleanup]
         public void Cleanup()
         {

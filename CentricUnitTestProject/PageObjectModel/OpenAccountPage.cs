@@ -69,7 +69,6 @@ namespace CentricUnitTestProject.PageObjectModel
             }
             else
             {
-                // daca nu e specificat cont, foloseste primul valid
                 var firstValid = fromOptions.FirstOrDefault(o => !string.IsNullOrWhiteSpace(o.GetAttribute("value")));
                 if (firstValid != null)
                 {
