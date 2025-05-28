@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\tests\\workflow_3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\tests\\workflow_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|solutionrelative:tests\\workflow_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|c:\\users\\vasile\\centricproject\\centricunittestproject\\tests\\workflow_3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|solutionrelative:tests\\workflow_3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\tests\\workflow_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|solutionrelative:tests\\workflow_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\pageobjectmodel\\registerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|solutionrelative:pageobjectmodel\\registerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\pageobjectmodel\\requestloanpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|solutionrelative:pageobjectmodel\\requestloanpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\pageobjectmodel\\openaccountpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|solutionrelative:pageobjectmodel\\openaccountpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\pageobjectmodel\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|solutionrelative:pageobjectmodel\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\pageobjectmodel\\updateinfopage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,30 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\pageobjectmodel\\contactpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|solutionrelative:pageobjectmodel\\contactpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\pageobjectmodel\\openaccountpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|solutionrelative:pageobjectmodel\\openaccountpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\pageobjectmodel\\requestloanpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|solutionrelative:pageobjectmodel\\requestloanpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|c:\\users\\vasile\\centricproject\\centricunittestproject\\tests\\workflow_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|solutionrelative:tests\\workflow_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\tests\\workflow_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|solutionrelative:tests\\workflow_1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\pageobjectmodel\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|solutionrelative:pageobjectmodel\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\pageobjectmodel\\registerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|solutionrelative:pageobjectmodel\\registerpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2F6A47A9-A709-4DB4-88C9-5C90F6B8EF6B}|CentricUnitTestProject.csproj|C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\pageobjectmodel\\dashboardpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,43 +50,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Workflow_3.cs",
               "DocumentMoniker": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\Tests\\Workflow_3.cs",
               "RelativeDocumentMoniker": "Tests\\Workflow_3.cs",
               "ToolTip": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\Tests\\Workflow_3.cs",
               "RelativeToolTip": "Tests\\Workflow_3.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAAwFQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAADoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T11:48:38.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Workflow_2.cs",
-              "DocumentMoniker": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\Tests\\Workflow_2.cs",
-              "RelativeDocumentMoniker": "Tests\\Workflow_2.cs",
-              "ToolTip": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\Tests\\Workflow_2.cs",
-              "RelativeToolTip": "Tests\\Workflow_2.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwEAAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T11:48:37.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Workflow_1.cs",
               "DocumentMoniker": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\Tests\\Workflow_1.cs",
               "RelativeDocumentMoniker": "Tests\\Workflow_1.cs",
               "ToolTip": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\Tests\\Workflow_1.cs",
               "RelativeToolTip": "Tests\\Workflow_1.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T11:48:37.096Z",
               "EditorCaption": ""
@@ -99,53 +86,40 @@
               "RelativeDocumentMoniker": "PageObjectModel\\RequestLoanPage.cs",
               "ToolTip": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\PageObjectModel\\RequestLoanPage.cs",
               "RelativeToolTip": "PageObjectModel\\RequestLoanPage.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwDYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA3wDYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T11:47:06.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "OpenAccountPage.cs",
               "DocumentMoniker": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\PageObjectModel\\OpenAccountPage.cs",
               "RelativeDocumentMoniker": "PageObjectModel\\OpenAccountPage.cs",
               "ToolTip": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\PageObjectModel\\OpenAccountPage.cs",
               "RelativeToolTip": "PageObjectModel\\OpenAccountPage.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwDIAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADIAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T08:32:35.579Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "LoginPage.cs",
               "DocumentMoniker": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\PageObjectModel\\LoginPage.cs",
               "RelativeDocumentMoniker": "PageObjectModel\\LoginPage.cs",
               "ToolTip": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\PageObjectModel\\LoginPage.cs",
               "RelativeToolTip": "PageObjectModel\\LoginPage.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA1wCsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCwAAABVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T11:45:20.199Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ContactPage.cs",
-              "DocumentMoniker": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\PageObjectModel\\ContactPage.cs",
-              "RelativeDocumentMoniker": "PageObjectModel\\ContactPage.cs",
-              "ToolTip": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\PageObjectModel\\ContactPage.cs",
-              "RelativeToolTip": "PageObjectModel\\ContactPage.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T11:49:47.007Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "UpdateInfoPage.cs",
               "DocumentMoniker": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\PageObjectModel\\UpdateInfoPage.cs",
               "RelativeDocumentMoniker": "PageObjectModel\\UpdateInfoPage.cs",
@@ -153,21 +127,45 @@
               "RelativeToolTip": "PageObjectModel\\UpdateInfoPage.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAgwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T11:48:33.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T11:48:33.579Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "RegisterPage.cs",
               "DocumentMoniker": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\PageObjectModel\\RegisterPage.cs",
               "RelativeDocumentMoniker": "PageObjectModel\\RegisterPage.cs",
               "ToolTip": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\PageObjectModel\\RegisterPage.cs",
               "RelativeToolTip": "PageObjectModel\\RegisterPage.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBsAAABeAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwB4AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T11:47:03.838Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Workflow_2.cs",
+              "DocumentMoniker": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\Tests\\Workflow_2.cs",
+              "RelativeDocumentMoniker": "Tests\\Workflow_2.cs",
+              "ToolTip": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\Tests\\Workflow_2.cs",
+              "RelativeToolTip": "Tests\\Workflow_2.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwEAAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T11:48:37.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ContactPage.cs",
+              "DocumentMoniker": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\PageObjectModel\\ContactPage.cs",
+              "RelativeDocumentMoniker": "PageObjectModel\\ContactPage.cs",
+              "ToolTip": "C:\\Users\\Vasile\\CentricProject\\CentricUnitTestProject\\PageObjectModel\\ContactPage.cs",
+              "RelativeToolTip": "PageObjectModel\\ContactPage.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T11:49:47.007Z"
             },
             {
               "$type": "Document",
