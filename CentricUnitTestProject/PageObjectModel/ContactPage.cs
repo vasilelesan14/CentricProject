@@ -29,11 +29,16 @@ namespace CentricUnitTestProject.PageObjectModel
             _driver.FindElement(By.Name("phone"))?.SendKeys(phone);
             _driver.FindElement(By.Name("message")).SendKeys(message);
 
+            Thread.Sleep(1000);
+
             _driver.FindElement(By.XPath("//input[@value='Send to Customer Care']")).Click();
-            Thread.Sleep(500);
+
+            Thread.Sleep(1000);
+
             // asteapta confirmarea
             _wait.Until(d => d.FindElement(By.XPath("//*[@id=\'rightPanel\']/p[2]")));
-            Thread.Sleep(500);
+
+            Thread.Sleep(1000);
         }
 
         public bool IsMessageSent()

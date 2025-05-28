@@ -51,6 +51,8 @@ namespace CentricUnitTestProject.PageObjectModel
             if (!found)
                 throw new Exception($"account {fromAccountId} not found in dropdown");
 
+            Thread.Sleep(1000);
+
             _driver.FindElement(By.XPath("//input[@value='Apply Now']")).Click();
 
             _wait.Until(d => d.FindElement(By.XPath("//*[contains(text(),'Loan Request Processed')]")));
@@ -59,7 +61,9 @@ namespace CentricUnitTestProject.PageObjectModel
         public bool IsLoanApproved()
         {
             var statusElement = _wait.Until(d => d.FindElement(By.Id("loanStatus")));
+
             Thread.Sleep(1000);
+
             return statusElement.Text.Trim().Equals("Approved", StringComparison.OrdinalIgnoreCase);
         }
 

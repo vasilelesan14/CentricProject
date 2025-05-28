@@ -23,6 +23,7 @@ namespace CentricUnitTestProject.PageObjectModel
         public void GoToOpenAccountPage()
         {
             _driver.FindElement(By.LinkText("Open New Account")).Click();
+            Thread.Sleep(1000);
             _wait.Until(d => d.FindElement(By.XPath("//h1[text()='Open New Account']")));
         }
 
@@ -81,7 +82,9 @@ namespace CentricUnitTestProject.PageObjectModel
             }
 
             _driver.FindElement(By.XPath("//input[@value='Open New Account']")).Click();
-            Thread.Sleep(500);
+            
+            Thread.Sleep(1000);
+            
             _wait.Until(d => d.FindElement(By.XPath("//h1[text()='Account Opened!']")));
         }
 

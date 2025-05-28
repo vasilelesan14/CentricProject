@@ -39,10 +39,12 @@ namespace CentricUnitTestProject.Tests
 
             openAccountPage.GoToOpenAccountPage();
             openAccountPage.OpenNewAccount("SAVINGS", "13344");
-            Thread.Sleep(500);
+
+            Thread.Sleep(1000);
 
             var accountId = openAccountPage.GetNewAccountId();
             Assert.IsFalse(string.IsNullOrEmpty(accountId), "new account id not generated");
+
             Thread.Sleep(1000);
         }
 
@@ -54,11 +56,16 @@ namespace CentricUnitTestProject.Tests
 
             loginPage.GoToLoginPage();
             loginPage.Login("john", "demo");
+            
+            Thread.Sleep(1000);
 
             loanPage.GoToRequestLoanPage();
             loanPage.RequestLoan(1000, 100, "13344");
 
+            Thread.Sleep(1000);
+
             Assert.IsTrue(loanPage.IsLoanApproved(), "loan was not approved");
+
             Thread.Sleep(1000);
 
         }
@@ -66,6 +73,7 @@ namespace CentricUnitTestProject.Tests
         [TestCleanup]
         public void Cleanup()
         {
+            Thread.Sleep(1000);
             driver.Quit();
         }
     }

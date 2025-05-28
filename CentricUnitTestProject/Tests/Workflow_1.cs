@@ -40,15 +40,18 @@ namespace CentricUnitTestProject.Tests
             var msg = wait.Until(d => d.FindElement(By.CssSelector("#rightPanel > p")));
             Assert.IsTrue(msg.Text.Contains("Your account was created successfully"));
 
-            Thread.Sleep(500);
+            Thread.Sleep(1000);
+
             loginPage.LogOut();
             var loginTitle = wait.Until(d => d.FindElement(By.XPath("//h2[text()='Customer Login']")));
             Assert.IsTrue(loginTitle.Displayed);
 
-            Thread.Sleep(500);
+            Thread.Sleep(1000);
+
             loginPage.GoToLoginPage();
             loginPage.Login("john", "demo");
             Assert.IsTrue(driver.PageSource.Contains("Accounts Overview"), "Autentificarea a eșuat sau pagina nu a fost încărcată corect.");
+            
             Thread.Sleep(1000);
 
         }
@@ -57,6 +60,8 @@ namespace CentricUnitTestProject.Tests
         [TestCleanup]
         public void Cleanup()
         {
+            Thread.Sleep(1000);
+
             driver.Quit();
         }
     }

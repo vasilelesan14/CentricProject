@@ -50,8 +50,8 @@ namespace CentricUnitTestProject.Tests
 
             Assert.IsTrue(driver.PageSource.Contains("Your updated address and phone number have been added to the system."),
                 "contact update message not found");
-            Thread.Sleep(1000);
 
+            Thread.Sleep(1000);
         }
 
 
@@ -69,12 +69,15 @@ namespace CentricUnitTestProject.Tests
             );
 
             Assert.IsTrue(contactPage.IsMessageSent(), "message was not successfully sent");
+
             Thread.Sleep(1000);
         }
 
         [TestCleanup]
         public void Cleanup()
         {
+            Thread.Sleep(1000);
+
             driver.Quit();
         }
     }

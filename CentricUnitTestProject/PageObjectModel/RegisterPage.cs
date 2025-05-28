@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
@@ -42,8 +43,12 @@ namespace CentricUnitTestProject.PageObjectModel
             _driver.FindElement(By.Id("customer.password")).SendKeys(_password);
             _driver.FindElement(By.Id("repeatedPassword")).SendKeys(_password);
 
+            Thread.Sleep(1000);
+
             var registerBtn = _wait.Until(d => d.FindElement(By.XPath("//input[@value='Register']")));
             ((IJavaScriptExecutor)_driver).ExecuteScript("arguments[0].click();", registerBtn);
+
+            Thread.Sleep(1000);
 
             _wait.Until(d => d.FindElement(By.XPath("//*[@id='rightPanel']/h1")));
         }

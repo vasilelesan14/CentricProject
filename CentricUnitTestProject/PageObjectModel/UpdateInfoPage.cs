@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using System;
+using System.Threading;
 
 namespace CentricUnitTestProject.PageObjectModel
 {
@@ -43,7 +44,11 @@ namespace CentricUnitTestProject.PageObjectModel
             _driver.FindElement(By.Id("customer.phoneNumber")).Clear();
             _driver.FindElement(By.Id("customer.phoneNumber")).SendKeys(phone);
 
+            Thread.Sleep(1000);
+
             _driver.FindElement(By.CssSelector("input[value='Update Profile']")).Click();
+
+            Thread.Sleep(1000);
 
             _wait.Until(d => d.FindElement(By.XPath("//*[contains(text(),'Your updated address and phone number have been added to the system.')]")));
         }

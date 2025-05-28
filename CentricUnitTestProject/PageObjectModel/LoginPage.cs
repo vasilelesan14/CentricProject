@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
@@ -22,17 +23,25 @@ namespace CentricUnitTestProject.PageObjectModel
         public void GoToLoginPage()
         {
             _driver.Navigate().GoToUrl("https://parabank.parasoft.com/parabank/register.htm");
+
         }
 
         public void Login(string username, string password)
         {
             _wait.Until(d => d.FindElement(By.Name("username"))).SendKeys(username);
             _driver.FindElement(By.Name("password")).SendKeys(password);
+
+            Thread.Sleep(1000);
+
             _driver.FindElement(By.XPath("//input[@value='Log In']")).Click();
+
+            Thread.Sleep(1000);
         }
 
         public void LogOut()
         {
+            Thread.Sleep(1000);
+
             _wait.Until(d => d.FindElement(By.XPath("//*[@id='leftPanel']/ul/li[8]/a"))).Click();
         }
     }
